@@ -44,6 +44,7 @@ public final class ModuleType<T extends Module> {
   public static final ModuleType<TPSModule> TPS = withoutPlayer(TPSModule.class, TPSModule::new, "tps");
   public static final ModuleType<PingModule> PING = withPlayer(PingModule.class, PingModule::new, "ping");
   public static final ModuleType<PlayerCountModule> PLAYER_COUNT = withoutPlayer(PlayerCountModule.class, PlayerCountModule::new, "players");
+  public static final ModuleType<TimeModule> TIME = withoutPlayer(TimeModule.class, TimeModule::new, "time");
 
   public static Collection<ModuleType<?>> moduleTypes() {
     return Collections.unmodifiableCollection(TYPES_BY_NAME.values());
